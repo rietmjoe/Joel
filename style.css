@@ -5,13 +5,20 @@ body {
 }
 
 #person {
-  font-size: 120px;
-  cursor: pointer;
   display: inline-block;
-  transition: transform 0.1s ease;
+  cursor: pointer;
   user-select: none;
 }
 
-#person.hit {
+#person-img {
+  width: 220px;
+  border-radius: 12px; /* optional, gibt weichere Kanten */
+  transition: transform 0.1s ease;
+}
+
+#person.hit #person-img {
   transform: translateX(20px) rotate(5deg);
+}
+#person.miss #person-img {
+  transform: translateX(-20px) rotate(-5deg);
 }
