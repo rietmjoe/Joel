@@ -22,5 +22,5 @@ person.addEventListener("click", () => {
     person.classList.remove("hit");
     img.src = BEFORE_SRC + "?v=" + Date.now();
     timeoutId = null;
-  }, 500);
+  }, 400);
 });
