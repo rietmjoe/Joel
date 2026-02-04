@@ -11,14 +11,13 @@ body {
 }
 
 #person-img {
-  width: 220px;
-  border-radius: 12px; /* optional, gibt weichere Kanten */
+  width: min(260px, 70vw);   /* <- kleiner; ändere 260px nach Wunsch */
+  height: auto;
+  border-radius: 12px;
   transition: transform 0.1s ease;
 }
 
 #person.hit #person-img {
-  transform: translateX(20px) rotate(5deg);
+  transform: translateX(16px) rotate(4deg);
 }
-#person.miss #person-img {
-  transform: translateX(-20px) rotate(-5deg);
-}
+
