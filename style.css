@@ -11,7 +11,7 @@ body {
 }
 
 #person-img {
-  width: min(260px, 70vw);   /* <- kleiner; ändere 260px nach Wunsch */
+  width: min(260px, 70vw);
   height: auto;
   border-radius: 12px;
   transition: transform 0.1s ease;
@@ -20,4 +20,3 @@ body {
 #person.hit #person-img {
   transform: translateX(16px) rotate(4deg);
 }
-
