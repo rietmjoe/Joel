@@ -7,7 +7,6 @@ const AFTER_SRC = "imageafter.png";
 let timeoutId = null;
 
 person.addEventListener("click", () => {
-  // falls man schnell mehrfach klickt: Timer zurücksetzen
   if (timeoutId) clearTimeout(timeoutId);
 
   person.classList.add("hit");
@@ -17,5 +16,5 @@ person.addEventListener("click", () => {
     person.classList.remove("hit");
     img.src = BEFORE_SRC;
     timeoutId = null;
-  }, 500); // 0.5 Sekunden
+  }, 500);
 });
